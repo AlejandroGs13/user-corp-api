@@ -18,7 +18,7 @@ public class UserCorpApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://localhost:4200").allowedMethods("*").allowedHeaders("*").maxAge(3600L);
+				registry.addMapping("/**").allowedOrigins("http://192.168.0.124:4200","http://143.198.109.24","https://143.198.109.24/").allowedMethods("*").allowedHeaders("*").maxAge(3600L);
 			}
 		};
 	}
